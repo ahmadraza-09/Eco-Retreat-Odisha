@@ -1,6 +1,6 @@
 /* General Styles for Navbar */
 .navbar-section {
-  height: 80px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -127,7 +127,7 @@
 }
 
 /* Responsive Styles */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .navbar-section {
     height: 60px;
     padding: 10px 10px;
