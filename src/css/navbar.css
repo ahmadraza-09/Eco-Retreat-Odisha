@@ -1,5 +1,7 @@
 /* General Styles for Navbar */
 .navbar-section {
+  width: 100%;
+  max-width: 1440px;
   height: 70px;
   display: flex;
   align-items: center;
@@ -16,6 +18,14 @@
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  z-index: 98;
+  transition: background-color 0.3s ease;
+  margin: auto;
 }
 
 /* Logo Section */
@@ -61,6 +71,8 @@
   text-decoration: none;
   cursor: pointer;
   padding: 0px 0px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .navbar-section .menu-section li.active::after {
@@ -89,6 +101,41 @@
 .navbar-section .menu-section li:hover::after {
   width: 100%;
 }
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  list-style: none;
+  padding: 10px 10px;
+  margin: 0;
+  z-index: 10;
+  display: none;
+  border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.menu-section.show-menu .dropdown-menu {
+  display: block;
+}
+
 
 /* Button Section */
 .navbar-section .button-section {
@@ -132,6 +179,12 @@
     height: 60px;
     padding: 10px 10px;
   }
+
+  .navbar-section.activated {
+    height: 60px;
+    padding: 10px;
+  }
+
   .navbar-section .logo-section {
     justify-content: start;
   }

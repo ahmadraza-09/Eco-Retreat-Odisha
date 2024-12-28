@@ -1,0 +1,228 @@
+.about-section {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px;
+}
+
+.about-section h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.about-section h4 {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 450;
+}
+
+.about-description-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.about-description-container-left {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.about-description-container-left img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.about-description-container-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.ecoretreat-location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.ecoretreat-location h2 {
+    text-transform: uppercase;
+}
+
+.ecoretreat-location-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.ecoretreat-location-boxes h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #EE8C26;
+    padding: 5px 10px;
+    border-radius: 55px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+}
+
+.ecoretreat-location-boxes h3:hover {
+    transform: rotate(-10deg);
+
+}
+
+.ecoretreat-location-boxes h3 div {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 55px;
+}
+
+.why-choose-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.why-choose-container h2 {
+    text-transform: uppercase;
+}
+
+.why-choose-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.why-choose-box {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.why-choose-box:hover {
+    transform: translateY(-10px);
+}
+
+.why-choose-box img {
+    width: 80px;
+}
+
+.why-choose-box span {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.why-choose-content ul{
+    margin-left: 50px;
+    list-style: circle;
+}
+
+.plan-ecoretreat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.plan-ecoretreat-container h2 {
+    text-transform: uppercase;
+}
+
+.plan-ecoretreat-content {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.plan-ecoretreat-content img {
+    width: 50%;
+    border-radius: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-description-container {
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+
+    .about-description-container-left {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .about-description-container-right {
+        width: 100%;
+    }
+
+    .why-choose-container {
+        margin-top: 20px;
+    }
+
+    .why-choose-box {
+        width: 120px;
+        height: 120px;
+    }
+
+    .why-choose-box span {
+        font-size: 14px;
+    }
+
+    .why-choose-box img {
+        width: 40px;
+    }
+
+    .plan-ecoretreat-container {
+        padding: 0px 10px;
+        margin-top: 20px;
+    }
+
+    .plan-ecoretreat-content {
+        flex-direction: column;
+    }
+    
+    .plan-ecoretreat-content img {
+        width: 100%;
+    }
+}

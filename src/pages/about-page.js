@@ -5,7 +5,7 @@ import Hero from '../components/hero'
 import About from '../components/about'
 import Footer from '../components/footer'
 
-const HomePage = () => {
+const AboutPage = () => {
   return (
     <>
       <Helmet>
@@ -40,11 +40,10 @@ const HomePage = () => {
       </Helmet>
 
       <Navbar />
-      <Hero/>
       <About/>
       <Footer/>
     </>
   )
 }
 
-export default HomePage
+export default AboutPage

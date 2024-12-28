@@ -9,6 +9,17 @@ const Navbar = () => {
 
     const [isOpen, setIsOpen] = useState(false);
     const [navbarSection, setNavbarSection] = useState(false);
+    const [dropdown, setDropdown] = useState({ location: false, gallery: false });
+
+    const locations = [
+        "Konark",
+        "Satkosia",
+        "Putsil",
+        "Sonapur",
+        "Daringbadi",
+        "Hirakud",
+        "Bhitarkanika",
+    ];
 
     const navbarFixed = () => {
         if (window.scrollY >= 100) {
@@ -29,6 +40,10 @@ const Navbar = () => {
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
+    };
+
+    const toggleDropdown = (type) => {
+        setDropdown((prev) => ({ ...prev, [type]: !prev[type] }));
     };
 
     return (
@@ -74,9 +89,60 @@ const Navbar = () => {
                 >
                     About
                 </li>
-                <li>Location</li>
-                <li>Gallery</li>
-                <li>Contact Us</li>
+                <li
+                    className="dropdown"
+                    onMouseEnter={() => toggleDropdown("location")}
+                    onMouseLeave={() => toggleDropdown("location")}
+                >
+                    Location &nbsp; <i className="fa-solid fa-angle-down"></i>
+                    {dropdown.location && (
+                        <ul className="dropdown-menu">
+                            {locations.map((loc) => (
+                                <li
+                                    key={loc}
+                                    onClick={() => {
+                                        navigate(`/eco-retreat-${loc.toLowerCase()}`);
+                                        setDropdown({ location: false, gallery: false });
+                                        setIsOpen(false);
+                                    }}
+                                >
+                                    {loc}
+                                </li>
+                            ))}
+                        </ul>
+                    )}
+                </li>
+                <li
+                    className="dropdown"
+                    onMouseEnter={() => toggleDropdown("gallery")}
+                    onMouseLeave={() => toggleDropdown("gallery")}
+                >
+                    Gallery &nbsp; <i className="fa-solid fa-angle-down"></i>
+                    {dropdown.gallery && (
+                        <ul className="dropdown-menu">
+                            {locations.map((loc) => (
+                                <li
+                                    key={loc}
+                                    onClick={() => {
+                                        navigate(`/gallery-eco-retreat-${loc.toLowerCase()}`);
+                                        setDropdown({ location: false, gallery: false });
+                                        setIsOpen(false);
+                                    }}
+                                >
+                                    {loc}
+                                </li>
+                            ))}
+                        </ul>
+                    )}
+                </li>
+                <li
+                    onClick={() => {
+                        navigate("/contact");
+                        setIsOpen(false);
+                    }}
+                >
+                    Contact Us
+                </li>
             </ul>
             <div className="button-section">
                 <button>Book Now</button>
