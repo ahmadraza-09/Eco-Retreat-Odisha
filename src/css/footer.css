@@ -7,7 +7,7 @@ footer {
 
 .footer-section {
   width: 100%;
-  height: 300px;
+  height: fit-content;
   background-color: #fff;
   border-top: 5px solid #252963;
   display: flex;
@@ -17,6 +17,7 @@ footer {
 }
 
 .footer-container {
+    max-width: 16.66%;
     list-style: none;
 }
 
@@ -38,7 +39,7 @@ footer {
 .footer-container .footer-logo {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     gap: 10px;
 }
 
@@ -57,6 +58,32 @@ footer {
 
 .footer-logo img {
     width: 50px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.contact-details span {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-details span:nth-child(2),
+.contact-details span:nth-child(3) {
+    align-items: center;
+}
+
+.contact-details span a{
+    color: #252963;
+    
 }
 
 .footer-container .footer-social {
@@ -120,6 +147,16 @@ footer {
         flex-direction: column;
         gap: 20px;
         padding: 20px 10px;
+    }
+
+    .footer-container {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .footer-container .footer-social {
+        justify-content: start;
+        gap: 20px;
     }
 
     .footer-copyright {

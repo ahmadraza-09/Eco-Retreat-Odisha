@@ -137,6 +137,14 @@ const Navbar = () => {
                 </li>
                 <li
                     onClick={() => {
+                        navigate("/odisha-map");
+                        setIsOpen(false);
+                    }}
+                >
+                    Odisha Map
+                </li>
+                <li
+                    onClick={() => {
                         navigate("/contact");
                         setIsOpen(false);
                     }}

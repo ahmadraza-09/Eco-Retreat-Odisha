@@ -17,6 +17,11 @@ const Footer = () => {
                         <img src={Logo} alt="" />
                         <h2>Eco Retreat <br /> <span>Odisha</span></h2>
                     </div>
+                    <div className="contact-details">
+                        <span><i class="fa-solid fa-location-dot"></i><a href="">Flat 2, G24, Shyam Park, Nawada Extension, Nawada, New Delhi, Delhi - 110059</a></span>
+                        <span><i class="fa-solid fa-phone"></i><a href="tel:8743000609">+91 8743000609</a></span>
+                        <span><i class="fa-solid fa-envelope"></i><a href="mailto:welcome@odishaholidays.in">welcome@odishaholidays.in</a></span>
+                    </div>
                 </ul>
                 <ul className="footer-container">
                     <h3>Menu</h3>
@@ -55,9 +60,9 @@ const Footer = () => {
                 <ul className="footer-container">
                     <h3>Connect With Us</h3>
                     <div className="footer-social">
-                        <a href=""><img src={Instagram} alt="" /></a>
-                        <a href=""><img src={Facebook} alt="" /></a>
-                        <a href=""><img src={Youtube} alt="" /></a>
+                        <a href="https://www.instagram.com/odishaholidays/"><img src={Instagram} alt="" /></a>
+                        <a href="https://www.facebook.com/OdishaHolidays.in"><img src={Facebook} alt="" /></a>
+                        <a href="https://www.youtube.com/channel/UCdGqp-2xTHhJfLHJqkaIS7A"><img src={Youtube} alt="" /></a>
                         <a href=""><img src={Whatsapp} alt="" /></a>
                     </div>
                 </ul>

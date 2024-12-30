@@ -1,0 +1,49 @@
+.odisha-map-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.odisha-map-section h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.odisha-map-section img {
+    width: 100%;
+}
+
+.odisha-map-section iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.odisha-map-section button {
+    padding: 5px 10px;
+    margin-top: 20px;
+    background-color: #252963;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+
+    .odisha-map-section {
+        padding: 10px;
+    }
+
+    .odisha-map-section h1 {
+        font-size: 25px;
+    }
+
+    .odisha-map-section iframe {
+        margin-top: 20px;
+    }
+}
