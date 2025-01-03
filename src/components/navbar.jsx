@@ -101,7 +101,7 @@ const Navbar = () => {
                                 <li
                                     key={loc}
                                     onClick={() => {
-                                        navigate(`/eco-retreat-${loc.toLowerCase()}`);
+                                        navigate(`/eco-retreat/${loc.toLowerCase()}`);
                                         setDropdown({ location: false, gallery: false });
                                         setIsOpen(false);
                                     }}
@@ -136,6 +136,7 @@ const Navbar = () => {
                     )}
                 </li>
                 <li
+                    className={isActive("/odisha-map")}
                     onClick={() => {
                         navigate("/odisha-map");
                         setIsOpen(false);
@@ -144,12 +145,13 @@ const Navbar = () => {
                     Odisha Map
                 </li>
                 <li
+                    className={isActive("/contact")}
                     onClick={() => {
                         navigate("/contact");
                         setIsOpen(false);
                     }}
                 >
-                    Contact Us
+                    Contact
                 </li>
             </ul>
             <div className="button-section">

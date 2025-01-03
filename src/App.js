@@ -3,6 +3,8 @@ import './App.css';
 import HomePage from './pages/home-page';
 import AboutPage from './pages/about-page';
 import OdishaMapPage from './pages/odisha-map-page';
+import ContactPage from './pages/contact-page';
+import EcoRetreatPage from './pages/eco-retreat-page';
 
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
           <Route path='/' element={<HomePage />} />
           <Route path='/about' element={<AboutPage />} />
           <Route path='/odisha-map' element={<OdishaMapPage />} />
+          <Route path='/contact' element={<ContactPage />} />
+          <Route path='/eco-retreat/:location' element={<EcoRetreatPage />} />
         </Routes>
       </BrowserRouter>
   );

@@ -18,7 +18,7 @@ const Footer = () => {
                         <h2>Eco Retreat <br /> <span>Odisha</span></h2>
                     </div>
                     <div className="contact-details">
-                        <span><i class="fa-solid fa-location-dot"></i><a href="">Flat 2, G24, Shyam Park, Nawada Extension, Nawada, New Delhi, Delhi - 110059</a></span>
+                        <span><i class="fa-solid fa-location-dot"></i>236, 1st Floor, Rout Complex, Cuttack Road, Bhubaneswar - 751006</span>
                         <span><i class="fa-solid fa-phone"></i><a href="tel:8743000609">+91 8743000609</a></span>
                         <span><i class="fa-solid fa-envelope"></i><a href="mailto:welcome@odishaholidays.in">welcome@odishaholidays.in</a></span>
                     </div>
