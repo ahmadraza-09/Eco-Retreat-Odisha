@@ -9,7 +9,7 @@ footer {
   width: 100%;
   height: fit-content;
   background-color: #fff;
-  border-top: 5px solid #252963;
+  border-top: 5px solid #ee8c26;
   display: flex;
   align-items: start;
   justify-content: space-between;
@@ -28,7 +28,7 @@ footer {
 }
 
 .footer-container li:hover {
-    color: #252963;
+    color: #ee8c26;
     transform: translateX(5px);
 }
 
@@ -107,7 +107,7 @@ footer {
 .footer-copyright {
     height: 40px;
     width: 100%;
-    background-color: #252963;
+    background-color: #ee8c26;
     color: #fff;
     display: flex;
     align-items: center;

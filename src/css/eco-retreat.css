@@ -269,6 +269,10 @@
   font-size: 40px;
 }
 
+.eco-retreat-how-to-reach h2 span {
+  text-transform: capitalize;
+}
+
 .eco-retreat-how-to-reach-container {
   width: 100%;
   display: flex;
@@ -355,6 +359,10 @@ tbody tr:hover {
 }
 .eco-retreat-attractions h2 {
   font-size: 40px;
+}
+
+.eco-retreat-attractions h2 span {
+  text-transform: capitalize;
 }
 
 .eco-retreat-attractions-container {

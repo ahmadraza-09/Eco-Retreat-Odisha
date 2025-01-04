@@ -1,3 +1,22 @@
+// USE IN EVERY PAGE
+import DeluxeSwissCottageIcon from '../assets/icon/deluxe-swiss-cottage-icon.png';
+import PremiumSwissCottageIcon from '../assets/icon/premium-swiss-cottage-icon.png';
+import RoyalLuxurySwissCottageIcon from '../assets/icon/royal-luxury-swiss-cottage-icon.png';
+import PresidentialSuiteIcon from '../assets/icon/presidental-suite-swiss-cottage-icon.png';
+
+import Activity1 from '../assets/icon/activity/travel.png'
+import Activity2 from '../assets/icon/activity/quad.png'
+import Activity3 from '../assets/icon/activity/guitar-playing.png'
+import Activity4 from '../assets/icon/activity/yoga.png'
+import Activity5 from '../assets/icon/activity/brochette.png'
+import Activity6 from '../assets/icon/activity/map.png'
+import Activity7 from '../assets/icon/activity/plant.png'
+import Activity8 from '../assets/icon/activity/video.png'
+import Activity9 from '../assets/icon/activity/celebration.png'
+
+
+
+// KONARK
 import Konark1 from "../assets/eco-retreat/konark/gallery/konark1.jpg";
 import Konark2 from "../assets/eco-retreat/konark/gallery/konark2.jpg";
 import Konark3 from "../assets/eco-retreat/konark/gallery/konark3.jpg";
@@ -26,6 +45,18 @@ import Konark25 from "../assets/eco-retreat/konark/gallery/konark25.jpg";
 import Konark26 from "../assets/eco-retreat/konark/gallery/konark26.jpg";
 import Konark27 from "../assets/eco-retreat/konark/gallery/konark27.jpg";
 
+import KonarkDeluxeSwissCottage from '../assets/eco-retreat/konark/room/Deluxe-Swiss-Cottage/deluxe-swiss-cottage1.jpg';
+import KonarkPremiumSwissCottage from '../assets/eco-retreat/konark/room/Premium-Swiss-Cottage/premium-swiss-cottage1.jpg';
+import KonarkRoyalLuxurySwissCottage from '../assets/eco-retreat/konark/room/Royal-Luxury-Swiss-Cottage/royal-luxury-deluxe-swiss-cottage1.jpg';
+import KonarkPresidentialSuite from '../assets/eco-retreat/konark/room/Presidential-Suite/presidential-suite1.jpg';
+
+import KonarkSunTemple from '../assets/attractions/konark/Konark-sun-temple.jpg';
+import KonarkAsiMuseum from '../assets/attractions/konark/ASI-Museum.jpg';
+import KonarkJagannathPuri from '../assets/attractions/konark/jagannath-puri.jpg';
+
+import KonarkExploreImg from '../assets/eco-retreat/konark/explore/Dining-hall.jpg';
+
+// SATKOSIA
 import Satkosia1 from "../assets/eco-retreat/satkosia/gallery/satkosia1.jpg";
 import Satkosia2 from "../assets/eco-retreat/satkosia/gallery/satkosia2.jpg";
 import Satkosia3 from "../assets/eco-retreat/satkosia/gallery/satkosia3.jpg";
@@ -42,39 +73,60 @@ import Satkosia13 from "../assets/eco-retreat/satkosia/gallery/satkosia13.jpg";
 import Satkosia14 from "../assets/eco-retreat/satkosia/gallery/satkosia14.jpg";
 import Satkosia15 from "../assets/eco-retreat/satkosia/gallery/satkosia15.jpg";
 
-import KonarkDeluxeSwissCottage from '../assets/eco-retreat/konark/room/Deluxe-Swiss-Cottage/deluxe-swiss-cottage1.jpg';
-import KonarkPremiumSwissCottage from '../assets/eco-retreat/konark/room/Premium-Swiss-Cottage/premium-swiss-cottage1.jpg';
-import KonarkRoyalLuxurySwissCottage from '../assets/eco-retreat/konark/room/Royal-Luxury-Swiss-Cottage/royal-luxury-deluxe-swiss-cottage1.jpg';
-import KonarkPresidentialSuite from '../assets/eco-retreat/konark/room/Presidential-Suite/presidential-suite1.jpg';
-
 import SatkosiaDeluxeSwissCottage from '../assets/eco-retreat/satkosia/room/Deluxe-Swiss-Cottage/deluxe-swiss-cottage1.jpg';
 import SatkosiaPremiumSwissCottage from '../assets/eco-retreat/satkosia/room/Premium-Swiss-Cottage/premium-swiss-cottage1.jpg';
-
-import DeluxeSwissCottageIcon from '../assets/icon/deluxe-swiss-cottage-icon.png';
-import PremiumSwissCottageIcon from '../assets/icon/premium-swiss-cottage-icon.png';
-import RoyalLuxurySwissCottageIcon from '../assets/icon/royal-luxury-swiss-cottage-icon.png';
-import PresidentialSuiteIcon from '../assets/icon/presidental-suite-swiss-cottage-icon.png';
-
-import Activity1 from '../assets/icon/activity/travel.png'
-import Activity2 from '../assets/icon/activity/quad.png'
-import Activity3 from '../assets/icon/activity/guitar-playing.png'
-import Activity4 from '../assets/icon/activity/yoga.png'
-import Activity5 from '../assets/icon/activity/brochette.png'
-import Activity6 from '../assets/icon/activity/map.png'
-import Activity7 from '../assets/icon/activity/plant.png'
-import Activity8 from '../assets/icon/activity/video.png'
-import Activity9 from '../assets/icon/activity/celebration.png'
-
-import KonarkSunTemple from '../assets/attractions/konark/Konark-sun-temple.jpg';
-import KonarkAsiMuseum from '../assets/attractions/konark/ASI-Museum.jpg';
-import KonarkJagannathPuri from '../assets/attractions/konark/jagannath-puri.jpg';
 
 import SatkosiaTigerReserve from '../assets/attractions/satkosia/tiger-reserve.jpg';
 import RatnagandaWaterfall from '../assets/attractions/satkosia/waterfall.jpg';
 import SatkosiaGorgeSanactuary from '../assets/attractions/satkosia/Satkosia-Gorge-Sanctuary.jpg';
 
-import KonarkExploreImg from '../assets/eco-retreat/konark/explore/Dining-hall.jpg';
 import SatkosiaExploreImg from '../assets/eco-retreat/satkosia/explore/satkosia-dining-1.jpg';
+
+// PUTSIL
+import Putsil1 from "../assets/eco-retreat/putsil/gallery/putsil1.jpg";
+import Putsil2 from "../assets/eco-retreat/putsil/gallery/putsil2.jpg";
+import Putsil3 from "../assets/eco-retreat/putsil/gallery/putsil3.jpg";
+import Putsil4 from "../assets/eco-retreat/putsil/gallery/putsil4.jpg";
+import Putsil5 from "../assets/eco-retreat/putsil/gallery/putsil5.jpg";
+import Putsil6 from "../assets/eco-retreat/putsil/gallery/putsil6.jpg";
+import Putsil7 from "../assets/eco-retreat/putsil/gallery/putsil7.jpg";
+import Putsil8 from "../assets/eco-retreat/putsil/gallery/putsil8.jpg";
+import Putsil9 from "../assets/eco-retreat/putsil/gallery/putsil9.jpg";
+import Putsil10 from "../assets/eco-retreat/putsil/gallery/putsil10.jpg";
+import Putsil11 from "../assets/eco-retreat/putsil/gallery/putsil11.jpg";
+import Putsil12 from "../assets/eco-retreat/putsil/gallery/putsil12.jpg";
+
+import PutsilDeluxeSwissCottage from '../assets/eco-retreat/putsil/room/Deluxe-Swiss-Cottage/deluxe-swiss-cottage1.jpg';
+import PutsilPremiumSwissCottage from '../assets/eco-retreat/putsil/room/Premium-Swiss-Cottage/premium-swiss-cottage1.jpg';
+
+import SabarSrikhetra from '../assets/attractions/putsil/SABAR-SRIKHETRA.jpg';
+import TribalMuseum from '../assets/attractions/putsil/tribal-museum.jpg';
+import DudumaWaterfalls from '../assets/attractions/putsil/duduma-waterfalls.jpg';
+
+import PutsilExploreImg from '../assets/eco-retreat/putsil/explore/koraput-landscape.jpg';
+
+// SONAPUR
+import Sonapur1 from "../assets/eco-retreat/sonapur/gallery/sonapur1.jpg";
+import Sonapur2 from "../assets/eco-retreat/sonapur/gallery/sonapur2.jpg";
+import Sonapur3 from "../assets/eco-retreat/sonapur/gallery/sonapur3.jpg";
+import Sonapur4 from "../assets/eco-retreat/sonapur/gallery/sonapur4.jpg";
+import Sonapur5 from "../assets/eco-retreat/sonapur/gallery/sonapur5.jpg";
+import Sonapur6 from "../assets/eco-retreat/sonapur/gallery/sonapur6.jpg";
+import Sonapur7 from "../assets/eco-retreat/sonapur/gallery/sonapur7.jpg";
+import Sonapur8 from "../assets/eco-retreat/sonapur/gallery/sonapur8.jpg";
+import Sonapur9 from "../assets/eco-retreat/sonapur/gallery/sonapur9.jpg";
+import Sonapur10 from "../assets/eco-retreat/sonapur/gallery/sonapur10.jpg";
+import Sonapur11 from "../assets/eco-retreat/sonapur/gallery/sonapur11.jpg";
+import Sonapur12 from "../assets/eco-retreat/sonapur/gallery/sonapur12.jpg";
+
+import SonapurDeluxeSwissCottage from '../assets/eco-retreat/sonapur/room/Deluxe-Swiss-Cottage/deluxe-swiss-cottage1.jpg';
+import SonapurPremiumSwissCottage from '../assets/eco-retreat/sonapur/room/Premium-Swiss-Cottage/premium-swiss-cottage1.jpg';
+
+import SureswariTemple from '../assets/attractions/sonapur/Sureswari-temple.jpg';
+import LankeswariTemple from '../assets/attractions/sonapur/LANKESWARI-TEMPLE_.jpg';
+import SubarnameruShivaTemple from '../assets/attractions/sonapur/Subarnameru-Shiva-Temple.jpg';
+
+import SonapurExploreImg from '../assets/eco-retreat/sonapur/explore/sonapur-parasailing.jpg';
 
 const ecoRetreatData = {
   konark: {

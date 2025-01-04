@@ -114,7 +114,7 @@ const EcoRetreat = () => {
             {/* How to Reach Section */}
             <div className="eco-retreat-how-to-reach">
                 <h4>Destination</h4>
-                <h2>How to Reach {location}</h2>
+                <h2>How to Reach <span>{location}</span></h2>
                 <br />
                 <div className="eco-retreat-how-to-reach-container">
                     <div className="eco-retreat-how-to-reach-container-left">
@@ -197,7 +197,7 @@ const EcoRetreat = () => {
             {/* Eco Retreat Attractions */}
             <div className="eco-retreat-attractions">
                 <h4>Attractions</h4>
-                <h2>Top Attractions in {location}</h2>
+                <h2>Top Attractions in <span>{location}</span></h2>
                 <br />
                 <div className="eco-retreat-attractions-container">
                     {topAttractions.map((attraction, index) => (
