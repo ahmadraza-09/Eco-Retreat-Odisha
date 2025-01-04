@@ -1,47 +1,43 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import Navbar from '../components/navbar'
-import Hero from '../components/hero'
 import About from '../components/about'
 import Footer from '../components/footer'
+import SocialMediaFixed from '../components/socialmedia-fixed'
+import TopBanner from '../components/top-banner'
 
 const AboutPage = () => {
   return (
     <>
       <Helmet>
-        <title>Eco Retreat Odisha - Luxury Camping Experience in Odisha</title>
-        <meta name="description" content="Explore Eco Retreat Odisha for luxury glamping experiences at Konark, Satkosia, Bhitarkanika, Daringbadi, Hirakud, Sonapur, and Putsil. Experience nature, adventure, and culture like never before." />
-        <meta name="keywords" content="Eco Retreat Odisha, Konark Eco Retreat, Satkosia glamping, Bhitarkanika eco camp, Daringbadi tourism, Hirakud luxury camping, Sonapur eco tourism, Putsil adventure retreat, Odisha glamping, luxury tents in Odisha, eco tourism Odisha, nature retreats Odisha, Odisha adventure tourism" />
-        <link rel="canonical" href="https://ecoretreatodisha.in" />
+        <title>About Us - Eco Retreat Odisha</title>
+        <meta name="description" content="Discover Eco Retreat Odisha, your gateway to sustainable luxury stays across scenic locations like Konark, Satkosia, Hirakud, Bhitarkanika, Putsil, Daringbadi, and Sonapur. Experience nature like never before." />
+        <meta name="keywords" content="Eco Retreat Odisha, eco retreat Konark, eco retreat Satkosia, eco retreat Hirakud, eco retreat Bhitarkanika, eco retreat Putsil, eco retreat Daringbadi, eco retreat Sonapur, sustainable tourism Odisha, luxury eco retreats" />
+        <link rel="canonical" href="https://ecoretreatodisha.in/about" />
 
         {/* JSON-LD structured data */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Resort",
+            "@type": "TravelAgency",
             "name": "Eco Retreat Odisha",
-            "url": "https://ecoretreatodisha.in",
+            "url": "https://ecoretreatodisha.in/about",
             "telephone": "+91 8743000609",
+            "description": "We provide booking for eco retreats in Odisha across beautiful locations like Konark, Satkosia, Hirakud, Bhitarkanika, Putsil, Daringbadi, and Sonapur.",
             "address": {
               "@type": "PostalAddress",
-              "addressLocality": "Odisha",
-              "addressCountry": "IN"
-            },
-            "description": "Eco Retreat Odisha offers a luxurious eco-friendly glamping experience amidst Odisha's breathtaking natural beauty and cultural heritage.",
-            "amenities": [
-              "Luxury Tents",
-              "Adventure Activities",
-              "Cultural Performances",
-              "Eco-Friendly Practices",
-              "Fine Dining",
-            ]
+              "addressRegion": "Odisha",
+              "addressCountry": "India"
+            }
           })}
         </script>
       </Helmet>
 
+      <TopBanner />
       <Navbar />
-      <About/>
-      <Footer/>
+      <About />
+      <Footer />
+      <SocialMediaFixed/>
     </>
   )
 }

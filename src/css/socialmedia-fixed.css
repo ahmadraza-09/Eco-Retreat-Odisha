@@ -1,0 +1,39 @@
+/* social-media-fixed.css */
+
+/* Common styles for both sections */
+.social-media-icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media-icons a {
+    margin-bottom: 10px;
+}
+
+.social-media-icons img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.2s;
+}
+
+.social-media-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Left side social media icons */
+.social-media-fixed-section-left {
+    position: fixed;
+    left: 20px;
+    bottom: 0px;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+/* Right side call and map icons */
+.social-media-fixed-section-right {
+    position: fixed;
+    right: 20px;
+    bottom: 0px;
+    transform: translateY(-50%);
+    z-index: 1000;
+}

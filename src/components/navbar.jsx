@@ -124,7 +124,7 @@ const Navbar = () => {
                                 <li
                                     key={loc}
                                     onClick={() => {
-                                        navigate(`/gallery-eco-retreat-${loc.toLowerCase()}`);
+                                        navigate(`/eco-retreat-gallery/${loc.toLowerCase()}`);
                                         setDropdown({ location: false, gallery: false });
                                         setIsOpen(false);
                                     }}

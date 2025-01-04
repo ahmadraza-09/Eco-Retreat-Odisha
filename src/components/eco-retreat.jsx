@@ -103,7 +103,6 @@ const EcoRetreat = () => {
                     {activities.map((activity, index) => (
                         <div className="eco-retreat-activities-box" key={index}>
                             <img src={activity.icon} alt={activity.name} /> {/* Display activity icon */}
-                            <br />
                             <h3>{activity.name}</h3>
                             <p>{activity.description}</p>
                         </div>

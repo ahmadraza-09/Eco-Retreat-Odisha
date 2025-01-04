@@ -3,46 +3,46 @@ import { Helmet } from 'react-helmet'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import EcoRetreat from '../components/eco-retreat'
+import { useParams } from 'react-router-dom'
+import SocialMediaFixed from '../components/socialmedia-fixed'
+import TopBanner from '../components/top-banner' 
 
 const EcoRetreatPage = () => {
+  const { location } = useParams(); // Fetch location from route params
+
+  const locationTitle = location ? `Eco Retreat - ${location.charAt(0).toUpperCase() + location.slice(1)}` : 'Eco Retreat Locations - Eco Retreat Odisha';
+  const locationDescription = location 
+    ? `Discover the beautiful eco retreat location in ${location.charAt(0).toUpperCase() + location.slice(1)}. Plan your nature retreat today.` 
+    : 'Discover the beautiful eco retreat locations in Odisha including Konark, Satkosia, Hirakud, Bhitarkanika, Putsil, Daringbadi, and Sonapur. Plan your nature retreat today.';
+
   return (
     <>
       <Helmet>
-        <title>Eco Retreat Odisha - Luxury Camping Experience in Odisha</title>
-        <meta name="description" content="Explore Eco Retreat Odisha for luxury glamping experiences at Konark, Satkosia, Bhitarkanika, Daringbadi, Hirakud, Sonapur, and Putsil. Experience nature, adventure, and culture like never before." />
-        <meta name="keywords" content="Eco Retreat Odisha, Konark Eco Retreat, Satkosia glamping, Bhitarkanika eco camp, Daringbadi tourism, Hirakud luxury camping, Sonapur eco tourism, Putsil adventure retreat, Odisha glamping, luxury tents in Odisha, eco tourism Odisha, nature retreats Odisha, Odisha adventure tourism" />
-        <link rel="canonical" href="https://ecoretreatodisha.in" />
+        <title>{locationTitle}</title>
+        <meta name="description" content={locationDescription} />
+        <meta name="keywords" content="Eco retreat Odisha, eco retreat Konark, eco retreat Satkosia, eco retreat Hirakud, eco retreat Bhitarkanika, eco retreat Putsil, eco retreat Daringbadi, eco retreat Sonapur, Odisha eco tourism" />
+        <link rel="canonical" href={`https://ecoretreatodisha.in/eco-retreat/${location}`} />
 
         {/* JSON-LD structured data */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Resort",
-            "name": "Eco Retreat Odisha",
-            "url": "https://ecoretreatodisha.in",
-            "telephone": "+91 8743000609",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Odisha",
-              "addressCountry": "IN"
-            },
-            "description": "Eco Retreat Odisha offers a luxurious eco-friendly glamping experience amidst Odisha's breathtaking natural beauty and cultural heritage.",
-            "amenities": [
-              "Luxury Tents",
-              "Adventure Activities",
-              "Cultural Performances",
-              "Eco-Friendly Practices",
-              "Fine Dining",
-            ]
+            "@type": "WebPage",
+            "name": locationTitle,
+            "url": `https://ecoretreatodisha.in/eco-retreat/${location}`,
+            "description": locationDescription,
+            "keywords": "Eco retreat Odisha, eco retreat Konark, eco retreat Satkosia, eco retreat Hirakud, eco retreat Bhitarkanika, eco retreat Putsil, eco retreat Daringbadi, eco retreat Sonapur, Odisha eco tourism"
           })}
         </script>
       </Helmet>
 
+      <TopBanner />
       <Navbar />
-      <EcoRetreat/>
-      <Footer/>
+      <EcoRetreat />
+      <Footer />
+      <SocialMediaFixed/>
     </>
   )
 }
 
-export default EcoRetreatPage
+export default EcoRetreatPage;

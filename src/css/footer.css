@@ -69,6 +69,11 @@ footer {
     gap: 10px;
 }
 
+.contact-details a {
+    text-decoration: none;
+    color: #000;
+}
+
 .contact-details span {
     display: flex;
     align-items: start;
