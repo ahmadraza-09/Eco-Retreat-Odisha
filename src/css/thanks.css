@@ -32,7 +32,7 @@
 }
 
 .button-group button {
-    background-color: #B92100;
+    background-color: #EE8C26;
     color: #fff;
     text-transform: uppercase;
     font-weight: 600;
@@ -45,6 +45,6 @@
 }
 
 .button-group button:hover {
-    background-color: #e84521;
+    background-color: #EE8C30;
     color: #fff;
 }
