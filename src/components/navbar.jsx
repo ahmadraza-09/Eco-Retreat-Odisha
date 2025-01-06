@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "../css/navbar.css";
 import Logo from "../assets/logo.png";
+import FormModal from "./form-modal"; // Import the new component
 
 const Navbar = () => {
     const navigate = useNavigate();
@@ -10,6 +11,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [navbarSection, setNavbarSection] = useState(false);
     const [dropdown, setDropdown] = useState({ location: false, gallery: false });
+    const [isModalOpen, setIsModalOpen] = useState(false); // State for modal
 
     const locations = [
         "Konark",
@@ -47,124 +49,127 @@ const Navbar = () => {
     };
 
     return (
-        <nav
-            className={navbarSection ? "navbar-section activated" : "navbar-section"}
-        >
-            <div className="logo-section">
-                <img
-                    src={Logo}
-                    alt=""
-                    className={isActive("/")}
-                    onClick={() => {
-                        navigate("/");
-                        setIsOpen(false);
-                    }}
-                />
-                <h1
-                    className={isActive("/")}
-                    onClick={() => {
-                        navigate("/");
-                        setIsOpen(false);
-                    }}
-                >
-                    Eco Retreat <br /> <span>Odisha</span>
-                </h1>
-            </div>
-            <ul className={`menu-section ${isOpen ? "show-menu" : ""}`}>
-                <li
-                    className={isActive("/")}
-                    onClick={() => {
-                        navigate("/");
-                        setIsOpen(false);
-                    }}
-                >
-                    Home
-                </li>
-                <li
-                    className={isActive("/about")}
-                    onClick={() => {
-                        navigate("/about");
-                        setIsOpen(false);
-                    }}
-                >
-                    About
-                </li>
-                <li
-                    className="dropdown"
-                    onMouseEnter={() => toggleDropdown("location")}
-                    onMouseLeave={() => toggleDropdown("location")}
-                >
-                    Location &nbsp; <i className="fa-solid fa-angle-down"></i>
-                    {dropdown.location && (
-                        <ul className="dropdown-menu">
-                            {locations.map((loc) => (
-                                <li
-                                    key={loc}
-                                    onClick={() => {
-                                        navigate(`/eco-retreat/${loc.toLowerCase()}`);
-                                        setDropdown({ location: false, gallery: false });
-                                        setIsOpen(false);
-                                    }}
-                                >
-                                    {loc}
-                                </li>
-                            ))}
-                        </ul>
-                    )}
-                </li>
-                <li
-                    className="dropdown"
-                    onMouseEnter={() => toggleDropdown("gallery")}
-                    onMouseLeave={() => toggleDropdown("gallery")}
-                >
-                    Gallery &nbsp; <i className="fa-solid fa-angle-down"></i>
-                    {dropdown.gallery && (
-                        <ul className="dropdown-menu">
-                            {locations.map((loc) => (
-                                <li
-                                    key={loc}
-                                    onClick={() => {
-                                        navigate(`/eco-retreat-gallery/${loc.toLowerCase()}`);
-                                        setDropdown({ location: false, gallery: false });
-                                        setIsOpen(false);
-                                    }}
-                                >
-                                    {loc}
-                                </li>
-                            ))}
-                        </ul>
-                    )}
-                </li>
-                <li
-                    className={isActive("/odisha-map")}
-                    onClick={() => {
-                        navigate("/odisha-map");
-                        setIsOpen(false);
-                    }}
-                >
-                    Odisha Map
-                </li>
-                <li
-                    className={isActive("/contact")}
-                    onClick={() => {
-                        navigate("/contact");
-                        setIsOpen(false);
-                    }}
-                >
-                    Contact
-                </li>
-            </ul>
-            <div className="button-section">
-                <button>Book Now</button>
-                <div className="menu-bars" onClick={toggleMenu}>
-                    {isOpen ? (
-                        <i className="fa-solid fa-close"></i>
-                    ) : (
-                        <i className="fa-solid fa-bars"></i>
-                    )}
+        <>
+            <nav
+                className={navbarSection ? "navbar-section activated" : "navbar-section"}
+            >
+                <div className="logo-section">
+                    <img
+                        src={Logo}
+                        alt=""
+                        className={isActive("/")}
+                        onClick={() => {
+                            navigate("/");
+                            setIsOpen(false);
+                        }}
+                    />
+                    <h1
+                        className={isActive("/")}
+                        onClick={() => {
+                            navigate("/");
+                            setIsOpen(false);
+                        }}
+                    >
+                        Eco Retreat <br /> <span>Odisha</span>
+                    </h1>
                 </div>
-            </div>
-        </nav>
+                <ul className={`menu-section ${isOpen ? "show-menu" : ""}`}>
+                    <li
+                        className={isActive("/")}
+                        onClick={() => {
+                            navigate("/");
+                            setIsOpen(false);
+                        }}
+                    >
+                        Home
+                    </li>
+                    <li
+                        className={isActive("/about")}
+                        onClick={() => {
+                            navigate("/about");
+                            setIsOpen(false);
+                        }}
+                    >
+                        About
+                    </li>
+                    <li
+                        className="dropdown"
+                        onMouseEnter={() => toggleDropdown("location")}
+                        onMouseLeave={() => toggleDropdown("location")}
+                    >
+                        Location &nbsp; <i className="fa-solid fa-angle-down"></i>
+                        {dropdown.location && (
+                            <ul className="dropdown-menu">
+                                {locations.map((loc) => (
+                                    <li
+                                        key={loc}
+                                        onClick={() => {
+                                            navigate(`/eco-retreat/${loc.toLowerCase()}`);
+                                            setDropdown({ location: false, gallery: false });
+                                            setIsOpen(false);
+                                        }}
+                                    >
+                                        {loc}
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </li>
+                    <li
+                        className="dropdown"
+                        onMouseEnter={() => toggleDropdown("gallery")}
+                        onMouseLeave={() => toggleDropdown("gallery")}
+                    >
+                        Gallery &nbsp; <i className="fa-solid fa-angle-down"></i>
+                        {dropdown.gallery && (
+                            <ul className="dropdown-menu">
+                                {locations.map((loc) => (
+                                    <li
+                                        key={loc}
+                                        onClick={() => {
+                                            navigate(`/eco-retreat-gallery/${loc.toLowerCase()}`);
+                                            setDropdown({ location: false, gallery: false });
+                                            setIsOpen(false);
+                                        }}
+                                    >
+                                        {loc}
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </li>
+                    <li
+                        className={isActive("/odisha-map")}
+                        onClick={() => {
+                            navigate("/odisha-map");
+                            setIsOpen(false);
+                        }}
+                    >
+                        Odisha Map
+                    </li>
+                    <li
+                        className={isActive("/contact")}
+                        onClick={() => {
+                            navigate("/contact");
+                            setIsOpen(false);
+                        }}
+                    >
+                        Contact
+                    </li>
+                </ul>
+                <div className="button-section">
+                    <button onClick={() => setIsModalOpen(true)}>Book Now</button>
+                    <div className="menu-bars" onClick={toggleMenu}>
+                        {isOpen ? (
+                            <i className="fa-solid fa-close"></i>
+                        ) : (
+                            <i className="fa-solid fa-bars"></i>
+                        )}
+                    </div>
+                </div>
+            </nav>
+            <FormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+        </>
     );
 };
 
