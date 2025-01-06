@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../css/hero.css';
 
 import Konark from '../assets/hero/konark.jpg';
@@ -15,6 +16,8 @@ const Hero = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [searchInput, setSearchInput] = useState('');
     const [filteredPlaces, setFilteredPlaces] = useState(places);
+
+    const navigate = useNavigate(); // Hook for navigation
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -42,6 +45,14 @@ const Hero = () => {
     const handleLocationSelect = (location) => {
         setSearchInput(location); // Set the input to selected location
         setFilteredPlaces([]); // Hide suggestions
+    };
+
+    const handleExplore = () => {
+        if (places.includes(searchInput)) {
+            navigate(`/eco-retreat/${searchInput.toLowerCase()}`); // Navigate to the location route
+        } else {
+            alert('Please select a valid location from the suggestions.'); // Show alert if location is invalid
+        }
     };
 
     return (
@@ -74,7 +85,7 @@ const Hero = () => {
                                         onChange={handleSearchChange}
                                         placeholder="Type Location..."
                                     />
-                                    <button>Explore</button>
+                                    <button onClick={handleExplore}>Explore</button>
                                     {/* Show suggestions when input does not match a valid place */}
                                     {searchInput && filteredPlaces.length > 0 && (
                                         <ul className="suggestions-list">
