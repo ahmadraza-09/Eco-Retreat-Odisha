@@ -105,10 +105,10 @@ const Footer = () => {
                 <ul className="footer-container">
                     <h3>Connect With Us</h3>
                     <div className="footer-social">
-                        <a href="https://www.instagram.com/odishaholidays/"><img src={Instagram} alt="" /></a>
-                        <a href="https://www.facebook.com/OdishaHolidays.in"><img src={Facebook} alt="" /></a>
-                        <a href="https://www.youtube.com/channel/UCdGqp-2xTHhJfLHJqkaIS7A"><img src={Youtube} alt="" /></a>
-                        <a href=""><img src={Whatsapp} alt="" /></a>
+                        <a href="https://www.instagram.com/odishaholidays/" target='_blank'><img src={Instagram} alt="" /></a>
+                        <a href="https://www.facebook.com/OdishaHolidays.in" target='_blank'><img src={Facebook} alt="" /></a>
+                        <a href="https://www.youtube.com/channel/UCdGqp-2xTHhJfLHJqkaIS7A" target='_blank'><img src={Youtube} alt="" /></a>
+                        <a href="https://api.whatsapp.com/send?phone=918743000196&text=Hello%20!%20I%20have%20a%20query%20regarding%20Eco%20Retreat" target='_blank'><img src={Whatsapp} alt="" /></a>
                     </div>
                 </ul>
             </div>
