@@ -18,7 +18,7 @@ const About = () => {
                 <div className="about-description-container-left"><img src={Img} alt="" /></div>
                 <div className="about-description-container-right">
                     <p>
-                        <strong>Eco Retreat Odisha</strong> is a luxury glamping experience organized by the Government of Odisha across stunning natural locations. However, booking directly through government channels can sometimes be uncertain regarding guide & seat availability.
+                        <strong>Eco Retreat Odisha</strong> is a luxury glamping experience organized by the Government of Odisha across stunning natural locations.
                     </p>
                     <br />
                     <p>
