@@ -1,0 +1,83 @@
+.payment-section {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 40px;
+    gap: 40px;
+}
+
+.payment-section li {
+    list-style: none;
+}
+
+.payment-section-left img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+.payment-section-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.payment-section-right h2 {
+    text-transform: uppercase;
+}
+
+.bank-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bank-details-left,
+.bank-details-right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.bank-details-left h3,
+.bank-details-right h3 {
+    text-transform: uppercase;
+}
+
+.bank-details-left span,
+.bank-details-right span {
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.payment-note {
+    background-color: #fff;
+    color: #000;
+    font-weight: 500;
+    width: fit-content;
+    padding: 0px 0px;
+    border-radius: 5px;
+}
+
+.payment-note span {
+    color: red;
+    font-weight: 700;
+}
+
+/* Responsive */
+@media (min-width: 320px) and (max-width: 768px) {
+    .payment-section {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .payment-section-left img {
+        width: 100%;
+    }
+
+
+}

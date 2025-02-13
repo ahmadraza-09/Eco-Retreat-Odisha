@@ -7,6 +7,7 @@ import ContactPage from './pages/contact-page';
 import EcoRetreatPage from './pages/eco-retreat-page';
 import EcoRetreatGalleryPage from './pages/eco-retreat-gallery-page';
 import ThanksPage from './pages/thanks-page';
+import PaymentPage from './pages/paymentpage';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path='/odisha-map' element={<OdishaMapPage />} />
           <Route path='/contact' element={<ContactPage />} />
           <Route path='/thanks' element={<ThanksPage />} />
+          <Route path='/payment' element={<PaymentPage />} />
           <Route path='/eco-retreat/:location' element={<EcoRetreatPage />} />
           <Route path='/eco-retreat-gallery/:location' element={<EcoRetreatGalleryPage/>} />
         </Routes>

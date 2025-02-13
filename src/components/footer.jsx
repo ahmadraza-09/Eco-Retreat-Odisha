@@ -43,7 +43,9 @@ const Footer = () => {
                     <li onClick={() => {
                         navigate("/contact");
                     }}>Contact</li>
-                    <li>Help</li>
+                    <li onClick={() => {
+                        navigate("/payment");
+                    }}>Payment</li>
                 </ul>
                 <ul className="footer-container">
                     <h3>Get Help</h3>

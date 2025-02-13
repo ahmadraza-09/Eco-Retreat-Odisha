@@ -156,6 +156,15 @@ const Navbar = () => {
                     >
                         Contact
                     </li>
+                    <li
+                        className={isActive("/payment")}
+                        onClick={() => {
+                            navigate("/payment");
+                            setIsOpen(false);
+                        }}
+                    >
+                        Payment
+                    </li>
                 </ul>
                 <div className="button-section">
                     <button onClick={() => setIsModalOpen(true)}>Book Now</button>
